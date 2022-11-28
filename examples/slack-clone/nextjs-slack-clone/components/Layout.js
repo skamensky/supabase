@@ -46,7 +46,7 @@ export default function Layout(props) {
             <h6 className="text-xs">{user?.email}</h6>
             <button
               className="bg-blue-900 hover:bg-blue-800 text-white py-2 px-4 rounded w-full transition duration-150"
-              onClick={() => signOut()}
+              onClick={() => {console.log('signing out');signOut()}}
             >
               Log out
             </button>
